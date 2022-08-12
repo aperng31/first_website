@@ -15,6 +15,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    min-width: max-content;
 
     color: #f9faf8;
     display: flex;
@@ -25,6 +26,7 @@ header {
 
 .links {
     display: flex;
+    min-width: max-content;
     justify-content: right;
     gap: 16px;
     margin-right: 100px;
@@ -42,7 +44,8 @@ a {
 .cont1 {
     background-color: #1f2937;
     display: flex;
-
+    justify-content: space-between;
+    gap: 100px;
 
     padding-top: 100px;
     padding-bottom: 100px;
@@ -50,34 +53,99 @@ a {
 
 .cont1 .hero {
     margin-left: 100px;
+    min-width: 500px;
+    max-width: 500px;
+    
+    display: flex;
+    flex: 0 0 initial;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
+#awesome {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
 p {
     color: #e5e7eb;
     font: 18px;
 }
 
 .cont1 .image {
-    width: 500px;
+    min-width: 300px;
     height: 200px;
     background-color: grey;
     color: #e5e7eb;
 
     margin-right: 100px;
     display: flex;
-    flex: flex 0 0 initial;
+    /*flex: flex 1 0 initial;*/
     justify-content: center;
     align-items: center;
 }
 
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
 
-
-.vert {
+.cont2 {
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 100px;
+}
+
+.cont2 .info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.imgHolder {
+
+}
+
+section {
+    display: flex;
+}
+
+.illus {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#awesome {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: bolder;
+
+.cont3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: #e5e7eb;
+
+}
+
+.cont3 .quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.cont3 .person {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
 }
